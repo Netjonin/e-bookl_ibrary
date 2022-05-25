@@ -11,6 +11,7 @@ namespace E_BOOKLIBRARY.Models
     {
         [Key]
         public string Id { get; set; } = Guid.NewGuid().ToString();
+
         [Required(ErrorMessage = "This is a required field.")]
         public string Title { get; set; }
 
@@ -19,7 +20,9 @@ namespace E_BOOKLIBRARY.Models
 
         [Required]
         public string Description { get; set; }
+
         public DateTime CreatedAt { get; set; }
+
         public DateTime UpdatedAt { get; set; }
 
         [Required]

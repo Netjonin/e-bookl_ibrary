@@ -10,7 +10,6 @@ namespace E_BOOKLIBRARY.Data.Repositories.BookRepo
     {
         Task<List<Book>> GetBooks();
         Task<Book> GetBook(string email);
-        
 
     }
 }
